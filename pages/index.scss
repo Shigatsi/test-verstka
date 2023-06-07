@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.scss);
+@import url(../fonts/fonts.scss);
+@import url(../blocks/header/header.scss);
+@import url(../blocks/footer/footer.scss);
+
+.page {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  background-color: #2a2c2f;
+  margin: 0 auto;
+  font-family: "Lato", "Raleway", Arial, sans-serif;
+}
