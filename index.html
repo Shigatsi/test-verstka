@@ -1,90 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./vendor/normalize.scss" />
-    <link rel="stylesheet" href="./pages/index.scss" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Бизнес" />
-    <meta name="author" content="Евгения Зубкова" />
-    <meta name="keywords" content="бизнес, заказы" />
-    <title>Тестовое задание по вёрстке</title>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="Лого проекта" />
-        <nav class="header__menu">
-          <a class="header__menu_item header__menu_item_active" href="#"
-            >Бизнес</a
-          >
-          <a class="header__menu_item" href="#">О нас</a>
-          <a class="header__menu_item" href="#">Цены</a>
-          <a class="header__menu_item" href="#">Оформить заказ</a>
-        </nav>
-      </header>
-      <main class="content">
-        <section class="intro">
-          <h1 class="intro__title">
-            Lorem ipsum dolor sit amet consectetur adipiscing
-          </h1>
-          <div class="intro__about">
-            <p class="intro__about_subtitle">
-              At vero eos et accusamus et iusto odio dignissimos ducimus!
-            </p>
-            <ul class="intro__about_items">
-              <li class="intro__about_item">Totam rem aperiam eaque ipsa</li>
-              <li class="intro__about_item">
-                Sit voluptatem accusantium doloremque laudantium
-              </li>
-              <li class="intro__about_item">
-                Sed ut perspiciatis, unde omnis iste natus error
-              </li>
-            </ul>
-          </div>
-          <img
-            class="intro__image"
-            src="./images/sleeping-girl.jpg"
-            alt="Господа в пиджаках обсуждают что-то"
-          />
-        </section>
-        <section class="order">
-          <h2 class="section__title intro__title">Оформление Заказа</h2>
-          <p class="section__subtitle intro__subtitle">
-            Перед заполнением формы ознакомьтесь с нашей схемой работы!
-          </p>
-        </section>
-      </main>
-      <footer class="footer">
-        <p class="footer__copyright">
-          &copy;2018 «LoremIpsum.net» Все права защищены.
-        </p>
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <img class="footer__list-item_img" href="#" />
-            <p class="footer__list-item_text" href="#">Qiwi wallet</p>
-          </li>
-          <li class="footer__list-item">
-            <img class="footer__list-item_img" href="#" />
-            <p class="footer__list-item_text" href="#">Yandex Money</p>
-          </li>
-          <li class="footer__list-item">
-            <img class="footer__list-item_img" href="#"/>
-            <p class="footer__list-item_text" href="#">Web Money</p>
-          </li>
-        </ul>
 
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <a class="footer__link" href="#">info@ipsum228.com</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__link" href="#"
-              >Мы вконтакте</a
-            >
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./vendor/normalize.scss" />
+  <link rel="stylesheet" href="./pages/index.scss" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Бизнес" />
+  <meta name="author" content="Евгения Зубкова" />
+  <meta name="keywords" content="бизнес, заказы" />
+  <title>Тестовое задание по вёрстке</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <p class="header__title" >LoremIpsum.Net</p>
+      <nav class="header__menu">
+        <a class="header__menu_item header__menu_item_active" href="#">Бизнес</a>
+        <a class="header__menu_item" href="#">О нас</a>
+        <a class="header__menu_item" href="#">Цены</a>
+        <a class="header__menu_item" href="#">Оформить заказ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="intro">
+        <h1 class="intro__title">
+          Lorem ipsum dolor sit amet consectetur adipiscing
+        </h1>
+        <div class="intro__about">
+          <p class="intro__about_subtitle">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </p>
+          <ul class="intro__about_items">
+            <li class="intro__about_item">Totam rem aperiam eaque ipsa</li>
+            <li class="intro__about_item">
+              Sit voluptatem accusantium doloremque laudantium
+            </li>
+            <li class="intro__about_item">
+              Sed ut perspiciatis, unde omnis iste natus error
+            </li>
+          </ul>
+        </div>
+        <div class="intro__button-container">
+          <button class="intro__button main-button">Заказать</button>
+          <button class="intro__button secondary-button">Подробнее</button>
+        </div>
+        <img class="intro__image" src="./images/sleeping-girl.jpg" alt="Господа в пиджаках обсуждают что-то" />
+      </section>
+      <section class="order">
+        <h2 class="section__title intro__title">Оформление Заказа</h2>
+        <p class="section__subtitle intro__subtitle">
+          Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        </p>
+        <div class="cards">
+          <div class="cards__item">
+            <img class="cards__image cards__item" src="./images/lagushkin.jpg" alt="белая иконка лупы на синем фоне">
+            <p class="cards__caption">Lorem ipsum dolorsit amet</p>
+          </div>
+          <div class="cards__diveder">
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image cards__item" src="./images/lagushkin.jpg" alt="белая иконка лупы на синем фоне">
+            <p class="cards__caption">Lorem ipsum dolorsit amet</p>
+          </div>
+          <div class="cards__diveder">
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image cards__item" src="./images/lagushkin.jpg" alt="белая иконка лупы на синем фоне">
+            <p class="cards__caption">Lorem ipsum dolorsit amet</p>
+          </div>
+          <div class="cards__diveder">
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image cards__item" src="./images/lagushkin.jpg" alt="белая иконка лупы на синем фоне">
+            <p class="cards__caption">Lorem ipsum dolorsit amet</p>
+          </div>
+          <div class="cards__diveder">
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+            <div class="cards__diveder-figure"></div>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image cards__item" src="./images/lagushkin.jpg" alt="белая иконка лупы на синем фоне">
+            <p class="cards__caption">Lorem ipsum dolorsit amet</p>
+          </div>
+          <div class="order-form">
+            <div class="order-form__custom-select">
+              <select name="" id="" class="order-form__select">
+                <option value="1" class="order-form__select-option">Sed ut perspiciatis
+                </option>
+                <option value="2" class="order-form__select-option"> Nemo enim ipsam
+                </option>
+                <option value="3" class="order-form__select-option">
+                  Itaque earum rerum</option>
+                <option value="4" class="order-form__select-option"> Temporibus autem</option>
+                <option value="5" class="order-form__select-option">Et harum quidem</option>
+              </select>
+            </div>
+            <input type="text" class="order-form__input" placeholder="Ваш e-mail">
+            <input type="text" class="order-form__input" placeholder="Ваше имя">
+            <div class="order-form__slidecontainer">
+              <input class="order-form__slider" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <button class="order-form__button secondary-button">прикрепить файл</button>
+            <div class="order-form__footer">
+              <button class="order-form__button primary-button">отправить</button>
+            </div>
+          </div>
+
+        </div>
+        <img class="intro__image" src="./images/sleeping-girl.jpg" alt="Карта мира из точек" />
+      </section>
+    </main>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy;2018 «LoremIpsum.net» Все права защищены.
+      </p>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <img class="footer__list-item_img" />
+          <p class="footer__list-item_text">Qiwi wallet</p>
+        </li>
+        <li class="footer__list-item">
+          <img class="footer__list-item_img" />
+          <p class="footer__list-item_text">Yandex Money</p>
+        </li>
+        <li class="footer__list-item">
+          <img class="footer__list-item_img" />
+          <p class="footer__list-item_text">Web Money</p>
+        </li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">info@ipsum228.com</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__link" href="#">Мы вконтакте</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
 </html>
